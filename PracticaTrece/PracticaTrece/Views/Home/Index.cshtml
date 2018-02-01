@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Vista Principal</h1>
+    </div>
+    <div id="resultado">
+    </div>
+
+    @Ajax.ActionLink("Refrescar", "Parcial", new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "resultado",
+        InsertionMode = InsertionMode.Replace
+    })
+</body>
+</html>

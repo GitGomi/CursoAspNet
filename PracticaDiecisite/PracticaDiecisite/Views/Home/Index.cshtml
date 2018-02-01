@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Ejemplo AJAX con jQuery</h1>
+    </div>
+    <input id="Button1" type="button" value="button" onclick="callAjax();"/>
+</body>
+</html>
+<script type="text/javascript">
+    function callAjax() {
+        $.ajax({
+            dataType: "text",
+            url: "Informacion.txt",
+            success: function (msg) {
+                alert("Data Saved: " + msg);
+            },
+            failure: function (msg) {
+                alert(msg);
+            }
+        });
+    }
+</script>

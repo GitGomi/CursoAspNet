@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MasterLayout</title>
+
+    <link href="~/Styles/Formatos.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Sistema General de Consultas</h1>
+    <div> 
+        @RenderBody()
+    </div>
+    <h2>Modelo de información</h2>
+    @RenderSection("MenuBar", required: false)
+</body>
+</html>

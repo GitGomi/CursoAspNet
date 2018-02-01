@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Ejemplo de JavaScript</h1>
+    </div>
+    <input id="Button1" type="button" value="Click" />
+    <input id="Button2" type="button" value="Presenta" />
+</body>
+</html>
+<script type="text/javascript">
+    x = "Adios";
+    function boton() {
+        
+        alert("Resultado: " + x);
+    }
+
+    function botonDos() {
+        alert("Contenido: " + x);
+    }
+
+
+    $("#Button1").on("click", function () {
+        boton();
+    });
+    
+</script>
+

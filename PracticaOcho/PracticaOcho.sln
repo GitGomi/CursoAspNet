@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaOcho", "PracticaOcho\PracticaOcho.csproj", "{39898D13-7737-43B5-A99F-D1400FEE4EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaOcho.Tests", "PracticaOcho.Tests\PracticaOcho.Tests.csproj", "{2B14EBF4-17D2-4726-B58D-36FA3EF6311A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39898D13-7737-43B5-A99F-D1400FEE4EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39898D13-7737-43B5-A99F-D1400FEE4EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39898D13-7737-43B5-A99F-D1400FEE4EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39898D13-7737-43B5-A99F-D1400FEE4EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B14EBF4-17D2-4726-B58D-36FA3EF6311A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B14EBF4-17D2-4726-B58D-36FA3EF6311A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B14EBF4-17D2-4726-B58D-36FA3EF6311A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B14EBF4-17D2-4726-B58D-36FA3EF6311A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03885265-481E-4F4F-9AE3-3AFCC4FB3ED4}
+	EndGlobalSection
+EndGlobal

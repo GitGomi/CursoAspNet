@@ -1,0 +1,25 @@
+Install-Package Microsoft.AspNet.WebPages.Data
+Install-Package Microsoft.AspNet.WebPages.WebData
+
+Para manejar datos de sesion en base de datos
+ejecutasmos la siguiente consulta en la siguiente
+ruta de windows desde command line
+
+cd C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+aspnet_regsql.exe -S DESKTOP-4NB4MVQ\SQLEXPRESS -E -ssadd -sstype p
+
+Lo que hace es crear una base de datos llamada ASPState para manjar dicha información
+
+En la aplicacion en el archivo Web.config reemplazar el SessionState por
+<sessionState mode="SQLServer" sqlConnectionString="Integrated Security=SSPI;data source=DESKTOP-4NB4MVQ\SQLEXPRESS;" />
+
+Integrated Security=SSPI; -> Significa que la autenticación es por Windows
+y el otro parametro es el nombre del servidor, ya no se especifica en nombre de
+la base de datos porque ya asume que será la ASPState
+
+C:\allfiles-v1\20486C\Mod12\Democode\OperasWebsites_12_begin\ variables de sesion en DB
+
+Correo Instructor Marco Antonio 
+margj64@hotmail.com
+80 dollars

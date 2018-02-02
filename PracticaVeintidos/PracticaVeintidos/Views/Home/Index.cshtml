@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>Ejemplo de un WebSocket</h1>
+    </div>
+    <input id="WebSocket" type="button" value="WebSocket" onclick="Muestra();"/>
+</body>
+</html>
+<script type="text/javascript">
+    function Muestra() {
+        var mysocket = new WebSocket("ws://echo.websocket.org");
+
+        mysocket.onopen = function (evt) {
+            alert("El socket esta abierto y mandando informacion");
+            mysocket.send("Hola que tal...");
+        }
+
+        mysocket.onerror = function (evt) {
+            document.writeln("Error: " + evt.data);
+        }
+
+        mysocket.onmessage = function (evt) {
+            document.writeln("Recibido: " + evt.data);
+        }
+    }
+
+</script>
